@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Cadastro de Carros</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <fieldset style="width: fit-content ;">
+        <legend><span> Cadastro de carros</span></legend>
+
+        <form action="#" method="post">
+            <div class="mb3">
+                <label for="nome">Modelo</label>
+                <input class="input" type="text" id="modelo" name="modelo" placeholder="Digite o modelo aqui">
+            </div>
+            <div class="mb3">
+                <label for="cor">Cor</label></td>
+                <input class="input" type="text" id="cor" name="cor" placeholder="Digite a cor">
+            </div>
+            <div class="mb3">
+                <label for="ano">Ano</label> </td>
+                <input class="input" type="number" id="ano" name="ano" placeholder="Digite o ano">
+            </div>
+            <div class="mb3">
+                <label for="placa">Placa</label> </td>
+                <input class="input" type="text" id="placa" name="placa" placeholder="Digite a placa do carro">
+
+            </div>
+            <div class="mb3">
+                <label for="kilometragem">Kilometragem</label>
+                <input class="input" type="number" id="kilometragem" name="kilometragem"
+                    placeholder="Digite a kilometragem do carro">
+            </div>
+
+            <div class="mb3">
+                <label for="valor">Valor</label>
+                <input class="input" type="number" id="valor" min="0.00" max="10000.00" step="0.01"
+                    placeholder="0,00" />
+            </div>
+
+            <div class="col-12">
+
+                <input type="button" value="Enviar" id="btnEnviar">
+                <input class="input" type="reset" value="Limpar" id="btnLimpar">
+            </div>
+            <div class="col-12">
+                <label> upload de foto</label></td>
+                <input class="input" type="file" name="foto" id="foto" accept="image/*">
+            </div>
+
+
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Novo
+                </label>
+            </div>
+            <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Usado
+                    </label>
+                </div>
+
+
+                <div>
+                    <label for="">categoria</label>
+
+                    <select name="" id="">
+                        <option value="AM">Hatch</option>
+                        <option value="AP">SUV</option>
+                        <option value="RR">Sedan</option>
+                        <option value="PA">Picape</option>
+                        <option value="TO">Utilitário </option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="">Fabricante</label>
+
+                    <select name="" id="">
+                        <option value="volkswagen"> Volksvagen</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="citroen">Citroen</option>
+                        <option value="ford">Ford</option>
+                    </select>
+                </div>
+                <div>
+                    Opcionais:
+
+                    <input type="checkbox" id="ar" name="ar" value="ar">
+                    <label for="ar"> Ar-condicionado</label>
+                    <input type="checkbox" id="vidro" name="vidro" value="vidro">
+                    <label for="vidro"> Vidro elétrico</label>
+                    <input type="checkbox" id="hid" name="hid" value="hid">
+                    <label for="hid"> Direção hidráulica</label>
+                </div>
+
+        </form>
+        </table>
+
+    </fieldset>
+
+</body>
+
+</html>
